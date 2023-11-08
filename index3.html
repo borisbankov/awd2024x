@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.row-1, .row-2, .row-3, .row-4{
+			font-size:0px;
+		}
+		div > div{
+			font-size:16px;
+			width:100%;
+			display: inline-block;
+		}
+		.box-1, .box-2{
+			background: blue;
+		}
+		.box-3{
+			background: yellow;
+		}
+		.box-4, .box-5, .box-6{
+			background: green;
+		}
+		.box-7, .box-8{
+			background: red;
+		}
+		@media screen and (min-width: 768px){
+			.box-1{
+				width:25%;
+			}
+			.box-2{
+				width:50%;
+			}
+			.box-3{
+				width:50%;
+			}
+			.box-4, .box-5, .box-6{
+				width:25%;
+			}
+			.box-7, .box-8{
+				width:50%;
+			}
+		}
+
+		@media screen and (min-width: 992px){
+			.box-1, .box-2{
+				width:25%;
+			}
+			.box-3{
+				width: 75%;
+			}
+			.box-4, .box-5{
+				width: 50%;
+			} 
+			.box-6{
+				width: 100%;
+			}
+			.box-7 {
+				width:25%;
+			}
+			.box-8{
+				width:75%;
+			}
+		}
+
+		@media screen and (min-width: 1200px){
+			.box-1, .box-2{
+				width:50%;
+			}
+			.box-3{
+				width:100%;
+			}
+			.box-4, .box-5, .box-6{
+				width:33.33333%;
+			}
+			.box-7 {
+				width:75%;
+			}
+			.box-8{
+				width:25%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="row-1">
+		<div class="box-1">1</div>
+		<div class="box-2">2</div>
+	</div>
+	<div class="row-2">
+		<div class="box-3">3</div>
+	</div>
+	<div class="row-3">
+		<div class="box-4">4</div>
+		<div class="box-5">5</div>
+		<div class="box-6">6</div>
+	</div>
+	<div class="row-4">
+		<div class="box-7">7</div>
+		<div class="box-8">8</div>
+	</div>
+</body>
+</html>
